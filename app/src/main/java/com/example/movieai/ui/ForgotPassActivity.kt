@@ -27,6 +27,8 @@ class ForgotPassActivity : AppCompatActivity() {
 
         binding.button.setOnClickListener{
             val forgotmail = findViewById<TextView>(R.id.emailforgot)
+            val forgotmail1 = findViewById<TextView>(R.id.emailforgot)
+            val forgotmail2 = findViewById<TextView>(R.id.emailforgot)
 
             val fAuth = FirebaseAuth.getInstance()
             fAuth.sendPasswordResetEmail(forgotmail.text.toString()).addOnCompleteListener({ listener ->
