@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "496102493831",
+    "project_id": "moveai-34997",
+    "storage_bucket": "moveai-34997.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:496102493831:android:3b5fd76044630182bab222",
+        "android_client_info": {
+          "package_name": "com.example.movieai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIWFqcOOK0lI7_LhMNp2bWjyJrlL2fZ_Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
