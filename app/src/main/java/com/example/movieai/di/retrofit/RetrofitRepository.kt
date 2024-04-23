@@ -1,6 +1,8 @@
 package com.example.movieai.di.retrofit
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
+import com.example.movieai.models.Genre
 import com.example.movieai.models.Movie
 import retrofit2.Call
 import retrofit2.Callback
@@ -9,16 +11,38 @@ import javax.inject.Inject
 
 class RetrofitRepository @Inject constructor(private val retrofitServiceInstance : RetrofitServiceInstance) {
 
-    fun getPopulerMovies(page:String,LiveData:MutableLiveData<Movie>){
-        retrofitServiceInstance.getPopularVideos(page).enqueue(object : Callback<Movie>{
+    fun getPopularMovies(page: String, liveData: MutableLiveData<Movie>) {
+        retrofitServiceInstance.getPopularVideos(page).enqueue(object : Callback<Movie> {
             override fun onResponse(call: Call<Movie>, response: Response<Movie>) {
-                LiveData.postValue(response.body())
+                liveData.postValue(response.body())
+            }
+            override fun onFailure(call: Call<Movie>, t: Throwable) {
+                liveData.postValue(null)
+            }
+        })
+    }
+    fun getAllGenres(liveData: MutableLiveData<Genre>) {
+        retrofitServiceInstance.getGenres().enqueue(object : Callback<Genre> {
+            override fun onResponse(call: Call<Genre>, response: Response<Genre>) {
+                liveData.postValue(response.body())
+            }
+
+            override fun onFailure(call: Call<Genre>, t: Throwable) {
+                liveData.postValue(null)
+            }
+        })
+    }
+    fun getRecentMovies(page: String, liveData: MutableLiveData<Movie>) {
+        retrofitServiceInstance.getRecentVideos(page).enqueue(object : Callback<Movie> {
+            override fun onResponse(call: Call<Movie>, response: Response<Movie>) {
+                liveData.postValue(response.body())
             }
 
             override fun onFailure(call: Call<Movie>, t: Throwable) {
-                LiveData.postValue(null)
+                liveData.postValue(null)
             }
 
         })
     }
+
 }

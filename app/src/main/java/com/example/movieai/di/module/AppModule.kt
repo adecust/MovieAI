@@ -13,7 +13,7 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 class AppModule {
-    var baseURL=""
+    var baseURL="https://api.themoviedb.org/"
     @Provides
     @Singleton
     fun getRetrofitServiceInstance(retrofit: Retrofit) : RetrofitServiceInstance

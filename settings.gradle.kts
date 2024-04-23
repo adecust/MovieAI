@@ -20,6 +20,7 @@ dependencyResolutionManagement {
             setUrl("https://jitpack.io")
         }
     }
+
 }
 
 rootProject.name = "MovieAI"

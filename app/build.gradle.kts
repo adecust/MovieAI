@@ -2,8 +2,10 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("com.google.gms.google-services")
-    kotlin("kapt")
-    id("com.google.dagger.hilt.android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
+
+    id("kotlin-parcelize")
 
 }
 
@@ -53,8 +55,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.51.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 
@@ -66,7 +68,7 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     kapt("androidx.room:room-common:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
-}
-kapt {
-    correctErrorTypes = true
+
+    implementation ("com.github.bumptech.glide:glide:4.6.1")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.6.1")
 }

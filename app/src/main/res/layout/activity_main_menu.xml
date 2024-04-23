@@ -50,15 +50,17 @@
         android:text="Trending"
         android:textColor="#FEFEFE"
         android:textSize="26dp"
-        app:layout_constraintBottom_toTopOf="@+id/recyclerViewTrending"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewTrending"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/recyclerView1"
         android:layout_width="406dp"
         android:layout_height="467dp"
+        tools:listitem="@layout/item_photo"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="1dp" />
 
