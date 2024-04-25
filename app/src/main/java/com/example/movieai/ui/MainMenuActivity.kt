@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.movieai.adapter.MovieAdapter
 import com.example.movieai.databinding.ActivityMainMenuBinding
+
 import com.example.movieai.models.Movie
 import com.example.movieai.viewmodel.HomePageViewModel
 import dagger.hilt.EntryPoint

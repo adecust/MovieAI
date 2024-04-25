@@ -1,3 +1,54 @@
 <resources>
-    <string name="app_name">MovieAI</string>
+    <string name="app_name">MoveAI</string>
+    <string name="teaser_trailer"><![CDATA[Teasers & Trailers]]></string>
+    <string name="overview">Overview</string>
+    <string name="popularmovies">Popular Movies</string>
+    <string name="recentmovies">Recent Movies</string>
+    <string name="viewall">View All</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="license">License</string>
+    <string name="notification_intervals">Notification Intervals</string>
+    <string name="author">Author</string>
+    <string name="version">Version</string>
+    <string name="nodata">No Data Found</string>
+
+    <string name="first_title">Offline Database</string>
+    <string name="first_subtitle">Create your own favorite list navigate your list without internet.</string>
+    <string name="second_title">Millions of Movies</string>
+    <string name="second_subtitle">Reach millions of movies instantly.</string>
+    <string name="third_title">Freedom to Translate</string>
+    <string name="third_subtitle">Translate the movie details you don\'t understand into your language with one touch.</string>
+    <string name="fourth_title">Night Mode</string>
+    <string name="fourth_subtitle">Travel comfortably at night without straining your eyes.</string>
+    <string name="fifth_title">Advance Notification</string>
+    <string name="fifth_subtitle">Let me inform you before the date of the vision of the films in your favorite list.</string>
+
+    <string name="information">Information!</string>
+
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="getstarted">Get Started</string>
+    <string name="license_detail">BSD 2-Clause License\n\nCopyright (c) 2019, Tekartik\nAll rights reserved.\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
+
+    <string name="ok">Ok</string>
+
+    <string name="add_favorite">Movie added to favorites</string>
+    <string name="remove_favorite">The movie was removed from favourites.</string>
+
+    <string name="no_connection">No Internet Connection</string>
+    <string name="cancel">Cancel</string>
+    <string name="error">Error</string>
+    <string name="go_to_settings">Go To Settings</string>
+
+    <string-array name="notification_array">
+        <item>15sec</item>
+        <item>30sec</item>
+        <item>1min</item>
+        <item>2mins</item>
+        <item>5mins</item>
+    </string-array>
 </resources>
