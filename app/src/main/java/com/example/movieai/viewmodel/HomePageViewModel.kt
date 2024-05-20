@@ -11,6 +11,7 @@ import javax.inject.Inject
 @HiltViewModel
 class HomePageViewModel @Inject constructor(private val repository: RetrofitRepository): ViewModel(){
     var popularMovieList:MutableLiveData<Movie>
+    var currentPage = 1
 
     init {
         popularMovieList= MutableLiveData()
@@ -18,7 +19,8 @@ class HomePageViewModel @Inject constructor(private val repository: RetrofitRepo
     fun getObserverLiveData():MutableLiveData<Movie>{
         return popularMovieList
     }
-    fun loadPopularData(page:String){
-        repository.getPopularMovies(page,popularMovieList)
+    fun loadPopularData(){
+        repository.getPopularMovies(currentPage.toString(), popularMovieList)
+        currentPage++
     }
 }
