@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.movieai.R
@@ -36,6 +37,7 @@ class SearchMenuActivity : AppCompatActivity(), CoroutineScope {
         setContentView(R.layout.activity_search_menu)
 
         recyclerView = findViewById(R.id.recyclerViewMovies)
+        recyclerView.layoutManager = GridLayoutManager(this, 2) // 2 sütunlu bir grid
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = movieAdapter
 

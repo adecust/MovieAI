@@ -25,4 +25,6 @@ interface RetrofitServiceInstance {
     @GET("3/search/movie?api_key=802b2c4b88ea1183e50e6b285a27696e&language=en-US")
     fun getSuggestions(@Query("query") query: String): Call<Movie>
 
+
+    //https://api.themoviedb.org/3/discover/movie?api_key=XXXXX&with_genres=27
 }
